@@ -16,29 +16,6 @@ cd mern-infrastructure
 
 4. Create a `.env` file and add entries for `DATABASE_URL` and `SECRET`:
 
-
-Certainly! Below is how you would write the provided instructions in Markdown format:
-
-markdown
-Copy code
-1. Clone the `mern-infrastructure` repo by running the following command in your terminal:
-git clone <url-of-mern-infrastructure> <name-of-project>
-
-javascript
-Copy code
-Note that the folder created will be the same as `<name-of-project>` instead of `mern-infrastructure`.
-
-2. Change into the project directory:
-cd name-of-project
-
-
-3. Install the Node modules:
-npm install
-
-
-4. Create a `.env` file and add entries for `DATABASE_URL` and `SECRET`:
-touch .env
-
 Then, open the `.env` file and add the following lines:
 
 DATABASE_URL=mongodb://localhost/your-database-name
