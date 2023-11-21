@@ -1,10 +1,24 @@
 import SignUpForm from "../../components/SignUpForm/SignUpForm"
+import LoginForm from "../../components/LoginForm/LoginForm"
+import { useState } from "react"
 
-const AuthPage = ({setUser}) => {
+const AuthPage = ({ setUser }) => {
+  const [showSignUp, setShowSignUp]=useState(true)
   return (
     <main>
-      <h1>AuthPage</h1>
-      <SignUpForm setUser={setUser }/>
+      {showSignUp ?
+        <SignUpForm setUser={setUser} />
+        :
+        <LoginForm setUser={setUser} />}
+      <button onClick={()=>setShowSignUp(!showSignUp)}>
+        {
+          showSignUp ?
+            'login'
+            :
+            'Sign Up'
+        }
+     </button>
+      
     </main>
   )
 }

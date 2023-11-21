@@ -6,10 +6,15 @@ export async function signUp(userData){
   return getUser()
 }
 
+export async function login(credential) {
+  const token = await usersAPI.login(credential)
+  localStorage.setItem('token',token)
+  return getUser()
+}
+
 export function logOut() {
   localStorage.removeItem('token')
 }
-
 
 export function getToken() {
   // getItem returns null if there's no string
