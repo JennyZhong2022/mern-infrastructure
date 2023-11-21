@@ -12,9 +12,10 @@ cd mern-infrastructure
 
 
 3. npm install
+4. npm run build
 
 
-4. Create a `.env` file and add entries for `DATABASE_URL` and `SECRET`:
+5. Create a `.env` file and add entries for `DATABASE_URL` and `SECRET`:
 
 Then, open the `.env` file and add the following lines:
 
