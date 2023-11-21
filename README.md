@@ -25,3 +25,6 @@ SECRET=YourSecretString
 5. Update the `name` in `package.json` to the name of your project by finding the line with `"name": "mern-infrastructure"` and changing `mern-infrastructure` to your project's name.
 
 Make sure to replace `url-of-mern-infrastructure`, `name-of-project`, `your-database-name`, and `YourSecretString` with actual values relevant to your project. The < and > are placeholders and should not be included in the actual commands.
+
+6. rm -rf .git
+7. git init
