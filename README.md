@@ -1,8 +1,8 @@
 ## Project Setup Instructions
 
 1. Clone the `mern-infrastructure` repo by running the following command in your terminal:
-```sh
-   git clone https://github.com/JennyZhong2022/mern-infrastructure.git
+
+git clone https://github.com/JennyZhong2022/mern-infrastructure.git
 
 Note that the folder created will be the same as `<name-of-project>` instead of `mern-infrastructure`.
 
