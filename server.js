@@ -18,14 +18,18 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 
 
-
 // Define other routes HERE, before the default
-app.use('/api/users',require('./routes/api/users'))
+app.use(require('./config/checkToken'))
+
+
+//put API routes here, before the 'catch all'route
+app.use('/api/users', require('./routes/api/users'))
 
 // This needs to be the last route:
 // All unrecognised requests get served the home page
 // (i.e. the React application):
-
+// the following 'catch all' route(note *)is necessary 
+// to return the index.html on all non-AJAX/API requests
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });

@@ -26,7 +26,7 @@ export default class SignUpForm extends Component {
         password:this.state.password
       }
       const user = await signUp(formDate)
-      console.log(user);
+     this.props.setUser(user);
 
      } catch {
       this.setState({error:'Sign Up Failed-Try Again'})
@@ -56,3 +56,6 @@ export default class SignUpForm extends Component {
   }
 
 }
+
+
+
